@@ -35,8 +35,8 @@ body {
 }
 
 .brand-logo img {
-    width: 42px;
-    height: 42px;
+    width: 128px;
+    height: 128px;
     object-fit: contain;
     display: block;
 }
