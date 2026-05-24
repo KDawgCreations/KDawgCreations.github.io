@@ -220,6 +220,11 @@ button:hover {
     font-weight: bold;
 }
 
+.mini-card a i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
 @media (max-width: 800px) {
         .profile-header,
         .profile-layout,
