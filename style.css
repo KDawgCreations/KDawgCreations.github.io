@@ -215,9 +215,9 @@ button:hover {
     background-color: #ffd6eb;
 }
 
-.active-nav {
-    background-color: #ff4fa3 !important;
-    color: white !important;
+.mini-card a.active-nav {
+    background-color: #ff4fa3;
+    color: white;
 
     box-shadow: 4px 4px 0 #ffb6d9;
 }
