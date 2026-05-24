@@ -214,30 +214,65 @@ button:hover {
 }
 
 @media (max-width: 800px) {
-    .profile-header,
-    .profile-layout,
-    .footer {
-        width: 94%;
-    }
+        .profile-header,
+        .profile-layout,
+        .footer {
+            width: 94%;
+        }
 
-    .profile-layout {
-        grid-template-columns: 1fr;
-    }
+        .profile-layout {
+            grid-template-columns: 1fr;
+        }
 
-    .floating-logo {
-        width: 120px;
-        height: 120px;
-    }
+        .floating-logo {
+            width: 120px;
+            height: 120px;
+        }
 
-    .banner {
-        height: 220px;
-    }
+        .banner {
+            height: 220px;
+        }
 
-    h1 {
-        font-size: 36px;
+        h1 {
+            font-size: 36px;
+        }
+        .content-feed,
+    .side-panel {
+        width: 100%;
     }
-    .content-feed,
-.side-panel {
-    width: 100%;
 }
+
+.bead-rain {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bead-rain span {
+    position: absolute;
+    top: -10%;
+    font-size: 24px;
+    animation: fall 14s linear infinite;
+    opacity: 0.65;
+}
+
+.bead-rain span:nth-child(1) { left: 8%; animation-delay: 0s; }
+.bead-rain span:nth-child(2) { left: 22%; animation-delay: 3s; }
+.bead-rain span:nth-child(3) { left: 36%; animation-delay: 6s; }
+.bead-rain span:nth-child(4) { left: 50%; animation-delay: 1s; }
+.bead-rain span:nth-child(5) { left: 64%; animation-delay: 4s; }
+.bead-rain span:nth-child(6) { left: 78%; animation-delay: 7s; }
+.bead-rain span:nth-child(7) { left: 90%; animation-delay: 2s; }
+.bead-rain span:nth-child(8) { left: 15%; animation-delay: 9s; }
+
+@keyframes fall {
+    from {
+        transform: translateY(-20vh) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(120vh) rotate(360deg);
+    }
 }
