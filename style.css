@@ -215,6 +215,13 @@ button:hover {
     background-color: #ffd6eb;
 }
 
+.active-nav {
+    background-color: #ff4fa3 !important;
+    color: white !important;
+
+    box-shadow: 4px 4px 0 #ffb6d9;
+}
+
 .mini-card li {
     margin-bottom: 10px;
     font-weight: bold;
