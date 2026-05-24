@@ -56,8 +56,8 @@ body {
     display: block;
 }
 
-# ".floating-logo" is the logo box for Kaitlyns Logo what sits on top of the top banner slideshow. 
-# # # To change the position, change top and left values and adjust the pixel offset to move it around.
+/. "floating logo" is the logo box for Kaitlyns Logo what sits on top of the top banner slideshow. 
+/. To change the position, change top and left values and adjust the pixel offset to move it around.
 
 .floating-logo {
     position: absolute;
