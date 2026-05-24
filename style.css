@@ -276,3 +276,11 @@ button:hover {
         transform: translateY(120vh) rotate(360deg);
     }
 }
+
+.top-bar,
+.profile-header,
+.profile-layout,
+.footer {
+    position: relative;
+    z-index: 1;
+}
