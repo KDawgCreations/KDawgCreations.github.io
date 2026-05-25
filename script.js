@@ -64,13 +64,19 @@ function showBanner(index) {
         currentBanner = 0;
     }
 
-    bannerImage.src = bannerImages[currentBanner];
+    bannerImage.classList.add("fade-out");
 
-    bannerDots.forEach((dot) => {
-        dot.classList.remove("active-dot");
-    });
+    setTimeout(() => {
+        bannerImage.src = bannerImages[currentBanner];
 
-    bannerDots[currentBanner].classList.add("active-dot");
+        bannerDots.forEach((dot) => {
+            dot.classList.remove("active-dot");
+        });
+
+        bannerDots[currentBanner].classList.add("active-dot");
+
+        bannerImage.classList.remove("fade-out");
+    }, 500);
 }
 
 prevBanner.addEventListener("click", () => {
@@ -87,3 +93,7 @@ bannerDots.forEach((dot) => {
         showBanner(slideNumber);
     });
 });
+
+setInterval(() => {
+    showBanner(currentBanner + 1);
+}, 10000);

@@ -69,6 +69,14 @@ body::before {
     display: block;
 }
 
+#banner-image {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#banner-image.fade-out {
+    opacity: 0;
+}
+
 .banner-arrow {
     width: 20px;
     height: 20px;
