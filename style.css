@@ -70,48 +70,47 @@ body::before {
 }
 
 .banner-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 46px;
-    height: 46px;
+    width: 20px;
+    height: 20px;
 
     border-radius: 50%;
-    border: 3px solid #ff4fa3;
+    border: 2px solid #ff4fa3;
 
-    background-color: rgba(255, 255, 255, 0.82);
+    background-color: white;
     color: #ff1493;
 
-    font-size: 26px;
+    font-size: 10px;
     font-weight: bold;
 
     cursor: pointer;
-    z-index: 4;
 
-    box-shadow: 4px 4px 0 #ffb6d9;
-}
+    padding: 0;
 
-.left-arrow {
-    left: 18px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.right-arrow {
-    right: 18px;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
 }
 
 .banner-arrow:hover {
-    background-color: #ffd6eb;
+    background-color: #ff1493;
+    color: white;
 }
 
 .banner-dots {
     position: absolute;
+
     bottom: 14px;
     left: 50%;
+
     transform: translateX(-50%);
 
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 8px;
 
     z-index: 4;
 }
