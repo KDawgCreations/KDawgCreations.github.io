@@ -74,23 +74,46 @@ To change the position, change top and left values and adjust the pixel offset t
 
 .floating-logo {
     position: absolute;
-
     top: 10px;
     left: 10px;
 
-    width: 170px;
-    height: 170px;
+    width: 190px;
+    height: 120px;
 
-    object-fit: contain;
-
-    background-color: rgba(255, 255, 255, 0.85);
-
+    background-color: rgba(255, 255, 255, 0.9);
     border: 3px solid #ff4fa3;
     border-radius: 20px;
-
-    padding: 8px;
+    padding: 10px;
 
     box-shadow: 5px 5px 0 #ffb6d9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.logo-main {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: #2b1b2f;
+    line-height: 1;
+}
+
+.logo-sub {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff1493;
+    letter-spacing: 1px;
+}
+
+.sparkle {
+    color: #ff1493;
+    font-size: 18px;
 }
 
 h1 {
