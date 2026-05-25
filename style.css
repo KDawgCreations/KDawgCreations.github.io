@@ -138,14 +138,6 @@ To change the position, change top and left values and adjust the pixel offset t
     margin-top: -2px;
 }
 
-.sparkle {
-    color: #ff4fa3;
-
-    font-size: 16px;
-
-    opacity: 0.9;
-}
-
 h1 {
     color: #d14d8b;
     font-size: 48px;
@@ -566,51 +558,3 @@ button:hover {
     }
 }
 
-.sparkle-sky span {
-    position: absolute;
-    color: rgba(255, 255, 255, 0.75);
-    text-shadow:
-        0 0 8px rgba(255, 255, 255, 0.9),
-        0 0 16px rgba(255, 20, 147, 0.45),
-        0 0 22px rgba(190, 160, 255, 0.5);
-
-    font-size: 28px;
-    opacity: 0;
-    animation: starPop 5s ease-in-out infinite;
-}
-
-.sparkle-sky span:nth-child(1) { top: 12%; left: 18%; animation-delay: -1s; }
-.sparkle-sky span:nth-child(2) { top: 28%; left: 72%; animation-delay: -3s; }
-.sparkle-sky span:nth-child(3) { top: 48%; left: 14%; animation-delay: -5s; }
-.sparkle-sky span:nth-child(4) { top: 64%; left: 82%; animation-delay: -2s; }
-.sparkle-sky span:nth-child(5) { top: 78%; left: 38%; animation-delay: -4s; }
-.sparkle-sky span:nth-child(6) { top: 18%; left: 48%; animation-delay: -6s; }
-.sparkle-sky span:nth-child(7) { top: 42%; left: 90%; animation-delay: -7s; }
-.sparkle-sky span:nth-child(8) { top: 86%; left: 8%; animation-delay: -8s; }
-
-@keyframes starPop {
-    0% {
-        opacity: 0;
-        transform: scale(0.4) rotate(0deg);
-    }
-
-    20% {
-        opacity: 0.85;
-        transform: scale(1.15) rotate(18deg);
-    }
-
-    45% {
-        opacity: 0.45;
-        transform: scale(0.9) rotate(36deg);
-    }
-
-    70% {
-        opacity: 0.9;
-        transform: scale(1.25) rotate(54deg);
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(0.3) rotate(90deg);
-    }
-}
