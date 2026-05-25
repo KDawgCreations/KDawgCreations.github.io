@@ -216,10 +216,16 @@ button:hover {
 }
 
 .mini-card a.active-nav {
-    background-color: #ff4fa3;
-    color: white;
+    background-color: #ff1493 !important;
+    color: white !important;
 
-    box-shadow: 4px 4px 0 #ffb6d9;
+    border-color: #ff1493 !important;
+
+    box-shadow: 4px 4px 0 #ff8fcf;
+}
+
+.mini-card a.active-nav:hover {
+    background-color: #e0007a !important;
 }
 
 .mini-card li {
