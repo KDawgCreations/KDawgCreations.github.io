@@ -69,6 +69,70 @@ body::before {
     display: block;
 }
 
+.banner-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+    border: 3px solid #ff4fa3;
+
+    background-color: rgba(255, 255, 255, 0.82);
+    color: #ff1493;
+
+    font-size: 26px;
+    font-weight: bold;
+
+    cursor: pointer;
+    z-index: 4;
+
+    box-shadow: 4px 4px 0 #ffb6d9;
+}
+
+.left-arrow {
+    left: 18px;
+}
+
+.right-arrow {
+    right: 18px;
+}
+
+.banner-arrow:hover {
+    background-color: #ffd6eb;
+}
+
+.banner-dots {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 10px;
+
+    z-index: 4;
+}
+
+.dot {
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+    border: 2px solid #ff4fa3;
+
+    background-color: white;
+
+    cursor: pointer;
+    padding: 0;
+}
+
+.dot.active-dot {
+    background-color: #ff1493;
+}
+
 /* - "floating logo" is the logo box for Kaitlyns Logo what sits on top of the top banner slideshow. 
 To change the position, change top and left values and adjust the pixel offset to move it around. */
 
