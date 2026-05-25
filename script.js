@@ -96,4 +96,4 @@ bannerDots.forEach((dot) => {
 
 setInterval(() => {
     showBanner(currentBanner + 1);
-}, 10000);
+}, 15000);
