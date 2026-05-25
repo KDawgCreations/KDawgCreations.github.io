@@ -5,21 +5,34 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background:
-    radial-gradient(circle at top left, rgba(255, 214, 235, 0.8) 0%, transparent 35%),
 
-    radial-gradient(circle at top right, rgba(255, 200, 120, 0.7) 0%, transparent 30%),
+    position: relative;
 
-    radial-gradient(circle at bottom right, rgba(255, 170, 210, 0.7) 0%, transparent 35%),
-
-    linear-gradient(
-        135deg,
-        #fff0b8 0%,
-        #ffd59e 25%,
-        #ffb3c7 60%,
-        #f3b6ff 100%
-    );
     color: #4a2438;
+}
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(circle at top left, rgba(255, 214, 235, 0.8) 0%, transparent 35%),
+
+        radial-gradient(circle at top right, rgba(255, 200, 120, 0.7) 0%, transparent 30%),
+
+        radial-gradient(circle at bottom right, rgba(255, 170, 210, 0.7) 0%, transparent 35%),
+
+        linear-gradient(
+            135deg,
+            #fff0b8 0%,
+            #ffd59e 25%,
+            #ffb3c7 60%,
+            #f3b6ff 100%
+        );
+
+    z-index: -2;
 }
 
 .top-bar {
@@ -313,9 +326,12 @@ button:hover {
 .clouds {
     position: fixed;
     inset: 0;
+
     overflow: hidden;
+
     pointer-events: none;
-    z-index: 0;
+
+    z-index: -1;
 }
 
 .cloud {
