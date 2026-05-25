@@ -14,7 +14,14 @@ function createSparkle() {
     sparkle.style.left = Math.random() * 100 + "vw";
     sparkle.style.top = Math.random() * 100 + "vh";
 
-    sparkle.style.fontSize = Math.random() * 18 + 14 + "px";
+    sparkle.style.fontSize = Math.random() * 10 + 8 + "px";
+
+    sparkle.style.opacity = Math.random() * 0.5 + 0.4;
+
+    sparkle.style.filter = `blur(${Math.random() * 1.2}px)`;
+
+    sparkle.style.transform =
+        `rotate(${Math.random() * 360}deg)`;
 
     sparkleSky.appendChild(sparkle);
 
@@ -23,4 +30,12 @@ function createSparkle() {
     }, 1800);
 }
 
-setInterval(createSparkle, 250);
+function sparkleLoop() {
+    createSparkle();
+
+    const randomDelay = Math.random() * 120 + 40;
+
+    setTimeout(sparkleLoop, randomDelay);
+}
+
+sparkleLoop();
