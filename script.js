@@ -20,20 +20,18 @@ function createSparkle() {
 
     sparkle.style.filter = `blur(${Math.random() * 1.2}px)`;
 
-    sparkle.style.transform =
-        `rotate(${Math.random() * 360}deg)`;
 
     sparkleSky.appendChild(sparkle);
 
     setTimeout(() => {
         sparkle.remove();
-    }, 1800);
+    }, 2100);
 }
 
 function sparkleLoop() {
     createSparkle();
 
-    const randomDelay = Math.random() * 120 + 40;
+    const randomDelay = Math.random() * 70 + 25;
 
     setTimeout(sparkleLoop, randomDelay);
 }
