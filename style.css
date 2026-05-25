@@ -95,20 +95,31 @@ To change the position, change top and left values and adjust the pixel offset t
 
 .logo-main {
     display: block;
-    font-family: Georgia, serif;
-    font-size: 34px;
-    font-weight: bold;
-    color: #2b1b2f;
-    line-height: 1;
+
+    font-family: 'Parisienne', cursive;
+
+    font-size: 42px;
+
+    color: #ff1493;
+
+    line-height: 0.9;
+
+    text-shadow:
+        2px 2px 0 #ffd6eb;
 }
 
 .logo-sub {
     display: block;
-    font-family: Georgia, serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ff1493;
-    letter-spacing: 1px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 22px;
+
+    letter-spacing: 3px;
+
+    color: #2b1b2f;
+
+    margin-top: -4px;
 }
 
 .sparkle {
