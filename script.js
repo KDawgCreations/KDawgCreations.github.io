@@ -14,7 +14,7 @@ function createSparkle() {
     sparkle.style.left = Math.random() * 100 + "vw";
     sparkle.style.top = Math.random() * 100 + "vh";
 
-    sparkle.style.fontSize = Math.random() * 10 + 8 + "px";
+    sparkle.style.fontSize = Math.random() * 18 + 10 + "px";
 
     sparkle.style.opacity = Math.random() * 0.5 + 0.4;
 
